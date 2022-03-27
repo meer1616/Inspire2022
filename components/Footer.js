@@ -19,13 +19,11 @@ const Footer = () => {
             <Box >
                 <Text fontSize="3xl" textAlign="center"> Links</Text>
                 <Box>
-
                     <Link px="5" href=""><a className="marginof5">Home</a></Link>
                     <Link px="5" href=""><a className="marginof5">Events</a></Link>
                     <Link px="5" href=""><a className="marginof5">About Us</a></Link>
                 </Box>
                 <Box>
-
                     <Link px="5" href=""><a className="marginof5">Faculty Committee</a></Link>
                     <Link px="5" href=""><a className="marginof5">Enroll Now</a></Link>
                 </Box>

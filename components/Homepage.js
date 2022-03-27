@@ -1,6 +1,7 @@
 import { Box } from '@chakra-ui/react'
 import React from 'react'
 import About from './About'
+import Carosal from './committee/Carosal'
 import CountDownTimer from './CountDownTimer'
 import Footer from './Footer'
 import Navbar from './Navbar'
@@ -13,6 +14,7 @@ const Homepage = () => {
             <PageContent />
             <About />
             <Footer />
+            {/* <Carosal /> */}
             {/* <CountDownTimer /> */}
         </Box>
     )

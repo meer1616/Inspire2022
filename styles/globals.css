@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Headland+One&display=swap');
+
+html::-webkit-scrollbar {
+  display: none;
+  scroll-behavior: smooth;
+}
+html,.carosalScrollNone {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  scroll-behavior: smooth;
+}
+.carosalScrollNone::-webkit-scrollbar {
+  display: none;
+  scroll-behavior: smooth;
+}
 html,
 body {
   padding: 0;
@@ -23,4 +38,7 @@ body {
 
 .bold{
   font-weight: 800;
+}
+.styleFont{
+  font-family: 'Headland One', serif;
 }

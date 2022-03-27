@@ -14,7 +14,7 @@ const Navbar = () => {
     const [isLargerThan1280] = useMediaQuery('(min-width: 600px)')
 
     return <Box>
-        {isLargerThan1280 ? <Flex alignItems="center" justifyContent="space-evenly">
+        {isLargerThan1280 ? <Flex px="10" alignItems="center" justifyContent="space-between" backgroundColor="black" color="white">
             <Box>
                 {/* <Image src="" alt="Inspire 2022"></Image> */}
                 <Text color={["red", "blue"]}>Logo</Text>
@@ -23,6 +23,7 @@ const Navbar = () => {
                 <Link px="5" href=""><a className="marginof5">Home</a></Link>
                 <Link px="5" href=""><a className="marginof5">Events</a></Link>
                 <Link px="5" href=""><a className="marginof5">About Us</a></Link>
+                <Link px="5" href=""><a className="marginof5">Our Team</a></Link>
                 <Link px="5" href=""><a className="marginof5">Faculty Committee</a></Link>
                 <Link px="5" href=""><a className="marginof5">Enroll Now</a></Link>
                 {/* <Link px="5">Events</Link>
