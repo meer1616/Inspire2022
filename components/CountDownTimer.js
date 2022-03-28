@@ -1,4 +1,4 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 
 const CountDownTimer = () => {
@@ -20,10 +20,13 @@ const CountDownTimer = () => {
   };
   return (
     <Box>
-      <span>Days:{timing.remDays}</span>
-      <span>Hour:{timing.remHour}</span>
-      <span>Min:{timing.remMin}</span>
-      <span>Sec:{timing.remSec}</span>
+      <Flex>
+
+        <Box mx="5" fontSize="2xl" className="styleFont"><Text textAlign="center" >{timing.remDays}</Text><Text>Days</Text> </Box>
+        <Box mx="5" fontSize="2xl" className="styleFont"><Text textAlign="center" >{timing.remHour}</Text><Text>Hour</Text> </Box>
+        <Box mx="5" fontSize="2xl" className="styleFont"><Text textAlign="center" >{timing.remMin}</Text><Text>Minute</Text> </Box>
+        <Box mx="5" fontSize="2xl" className="styleFont"><Text textAlign="center" >{timing.remSec}</Text><Text>Second</Text> </Box>
+      </Flex>
     </Box>
   );
 };
