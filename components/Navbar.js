@@ -26,13 +26,13 @@ const Navbar = () => {
           px="10"
           alignItems="center"
           justifyContent="space-between"
-          //   background="black"
+            background="black"
           color="white"
           position="fixed"
           top="0"
           width="100%"
           //   left="0"
-          style={{ backgroundColor: "black" }}
+          // style={{ backgroundColor: "black" }}
         >
           <Box>
             {/* <Image src="" alt="Inspire 2022"></Image> */}
