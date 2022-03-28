@@ -27,7 +27,7 @@ body {
 }
 
 .bckImg{
-  background: rgba(0, 0, 0, 0.7) url("../components/image/Untitled-3.jpg");
+  background: rgba(0, 0, 0, 0.7) url("../public/bck.jpg");
   background-blend-mode: darken;
   background-repeat: no-repeat;
   background-size: cover;

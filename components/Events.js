@@ -6,7 +6,7 @@ import CardData from "./CardData.js";
 
 const Events = () => {
   return (
-    <Box mx="auto" my="5" mb="20px" align="center" justifyContent="center">
+    <Box mx="auto" my="5" mb="20px" align="center" justifyContent="center" id="events">
       <Heading mb="20px">Department events</Heading>
       <Flex flexWrap="wrap" alignitem="center" justifyContent="center" padding="5">
 

@@ -13,57 +13,58 @@ const CarosalTest = () => {
       overflow="auto"
       className="carosalScrollNone"
     >
-      {TeamData.map((data, index) => {
-        return (
-          <Flex
-            key={index}
-            alignItems="center"
-            justifyContent="center"
-            my="10"
-            id={data.committee}
-          // mt="16"
-          >
-            {/* <Box width="40%"> */}
-            {/* <Text className="styleFont" ml="20" fontSize="5xl">
+      <Box mt="10" >
+
+        {TeamData.map((data, index) => {
+          return (
+            <Flex
+              key={index}
+              alignItems="center"
+              justifyContent="center"
+              my="20"
+              id={data.committee}
+            >
+              {/* <Box width="40%"> */}
+              {/* <Text className="styleFont" ml="20" fontSize="5xl">
                 Committee{" "}
               </Text> */}
-            {/* </Box> */}
-            <Box width="60%">
-              <Text className="styleFont" fontSize="5xl">
-                {/* Technical{" "} */}
-                {data.committee}
-              </Text>
-              <Carousel
-                showIndicators={true}
-                infiniteLoop={true}
-                useKeyboardArrows={true}
-                showArrows={true}
-                showStatus={false}
-                showThumbs={false}
-                autoPlay={true}
-                stopOnHover={true}
-                swipeable={true}
-                emulateTouch={true}
-                dynamicHeight={true}
-                autoFocus={false}
-              >
-                {data.imgSrc.map((img, index) => {
-                  return (
-                    <div key={index}>
-                      <Image
-                        src={img.imgUrl}
-                        alt={img.name}
-                        width="50%"
-                        height="50%"
-                      />
-                      <p className="legend" style={{ fontSize: "18px" }}>
-                        {img.name}
-                      </p>
-                    </div>
-                  );
-                })}
+              {/* </Box> */}
+              <Box width="60%">
+                <Text className="styleFont" fontSize="5xl">
+                  {/* Technical{" "} */}
+                  {data.committee}
+                </Text>
+                <Carousel
+                  showIndicators={true}
+                  infiniteLoop={true}
+                  useKeyboardArrows={true}
+                  showArrows={true}
+                  showStatus={false}
+                  showThumbs={false}
+                  autoPlay={true}
+                  stopOnHover={true}
+                  swipeable={true}
+                  emulateTouch={true}
+                  dynamicHeight={true}
+                  autoFocus={false}
+                >
+                  {data.imgSrc.map((img, index) => {
+                    return (
+                      <div key={index}>
+                        <Image
+                          src={img.imgUrl}
+                          alt={img.name}
+                          width="50%"
+                          height="50%"
+                        />
+                        <p className="legend" style={{ fontSize: "18px" }}>
+                          {img.name}
+                        </p>
+                      </div>
+                    );
+                  })}
 
-                {/* <div>
+                  {/* <div>
                   <Image src="/bck.jpg" alt="1" />
                   <p className="legend" style={{ fontSize: "18px" }}>
                     Meer Patel
@@ -75,11 +76,13 @@ const CarosalTest = () => {
                     Meer Patel
                   </p>
                 </div> */}
-              </Carousel>
-            </Box>
-          </Flex>
-        );
-      })}
+                </Carousel>
+              </Box>
+            </Flex>
+          );
+        })}
+      </Box>
+
     </Box>
   );
 };
