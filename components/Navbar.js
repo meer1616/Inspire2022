@@ -8,10 +8,12 @@ import {
   DrawerOverlay,
   DrawerContent,
   DrawerCloseButton,
+  Image
 } from "@chakra-ui/react";
 import React from "react";
 import Link from "next/link";
 import { useMediaQuery } from "@chakra-ui/react";
+// import Image from "next/image";
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -23,10 +25,10 @@ const Navbar = () => {
       {isLargerThan1280 ? (
         <Flex
           zIndex="100"
-          px="10"
+          px="8"
           alignItems="center"
           justifyContent="space-between"
-            background="black"
+          background="black"
           color="white"
           position="fixed"
           top="0"
@@ -35,10 +37,10 @@ const Navbar = () => {
           // style={{ backgroundColor: "black" }}
         >
           <Box>
-            {/* <Image src="" alt="Inspire 2022"></Image> */}
-            <Text color={["red", "blue"]}>Logo</Text>
+            <Image src="/logo_dark.png" alt="Inspire 2022" width="36"></Image>
+            {/* <Text color={["red", "blue"]}>Logo</Text> */}
           </Box>
-          <Box>
+          <Box fontSize="md" letterSpacing="wide">
             <Link px="5" href="/">
               <a className="marginof5">Home</a>
             </Link>
@@ -51,7 +53,7 @@ const Navbar = () => {
             <Link px="5" href="/ourteam">
               <a className="marginof5">Our Team</a>
             </Link>
-            <Link px="5" href="/facultycommittee">
+            <Link px="5" href="/faculty-committee">
               <a className="marginof5">Faculty Committee</a>
             </Link>
             <Link px="5" href="">

@@ -1,14 +1,14 @@
-import { Box, Divider, Flex, Text } from "@chakra-ui/react";
+import { Box, Divider, Flex, Text, Image } from "@chakra-ui/react";
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
+// import Image from "next/image";
 
 const Footer = () => {
   return (
     <Box backgroundColor="blackAlpha.900" color="white">
       <Flex alignItems="center" justifyContent="space-between" px="5">
         <Box>
-          <Text>
+          {/* <Text>
             <span className="bold">I</span> - Inspire the community
           </Text>
           <Text>
@@ -28,7 +28,8 @@ const Footer = () => {
           </Text>
           <Text>
             <span className="bold">E</span> - Enterpreneur creating
-          </Text>
+          </Text> */}
+          <Image src="/logo_dark.png" width="56" alt="Inspire 2022"></Image>
         </Box>
 
         <Box>
@@ -46,8 +47,8 @@ const Footer = () => {
             <Link px="5" href="">
               <a className="marginof5">About Us</a>
             </Link>
-          </Box>
-          <Box>
+            {/* </Box> */}
+            {/* <Box> */}
             <Link px="5" href="">
               <a className="marginof5">Faculty Committee</a>
             </Link>
@@ -73,7 +74,7 @@ const Footer = () => {
               src="/Facebook.svg"
               alt="Instagram"
               height="30%"
-              width="30%"
+              width="50%"
             ></Image>
           </Box>
         </Box>

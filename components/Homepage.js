@@ -10,10 +10,10 @@ import PageContent from "./PageContent";
 const Homepage = () => {
   return (
     <Box className="styleFont">
-      <Navbar />
+      {/* <Navbar /> */}
       <PageContent />
       <About />
-      <Footer />
+      {/* <Footer /> */}
       {/* <Carosal /> */}
       {/* <CountDownTimer /> */}
     </Box>
