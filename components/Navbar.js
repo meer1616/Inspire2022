@@ -11,7 +11,9 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import Link from "next/link";
-import { useMediaQuery } from "@chakra-ui/react";
+import { useMediaQuery, Image } from "@chakra-ui/react";
+// import Image from "next/image";
+import logo from "../components/image/finallogo.svg"
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -26,17 +28,18 @@ const Navbar = () => {
           px="10"
           alignItems="center"
           justifyContent="space-between"
-            background="black"
+          background="black"
           color="white"
           position="fixed"
-          top="0"
+          top="2"
           width="100%"
-          //   left="0"
-          // style={{ backgroundColor: "black" }}
+        //   left="0"
+        // style={{ backgroundColor: "black" }}
         >
           <Box>
-            {/* <Image src="" alt="Inspire 2022"></Image> */}
-            <Text color={["red", "blue"]}>Logo</Text>
+
+            <Image alt="Inspire 2022"></Image>
+
           </Box>
           <Box>
             <Link px="5" href="/">

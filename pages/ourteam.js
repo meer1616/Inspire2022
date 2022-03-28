@@ -9,9 +9,9 @@ const Ourteam = () => {
         <Navbar />
         {/* <Carosal /> */}
         <Flex position="relative">
-            <Box  >
+            <Box  mt="20">
                 {TeamData.map((data) => {
-                    return <Text>
+                    return <Text >
                         <Link href={`#${data.committee}`}><a >{data.committee}</a></Link>
                     </Text>
                     // <p id={`${data.committee}`}>{data.committee}</p>

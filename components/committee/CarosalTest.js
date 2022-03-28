@@ -21,6 +21,7 @@ const CarosalTest = () => {
             justifyContent="center"
             my="10"
             id={data.committee}
+          // mt="16"
           >
             {/* <Box width="40%"> */}
             {/* <Text className="styleFont" ml="20" fontSize="5xl">
