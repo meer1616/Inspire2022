@@ -13,9 +13,10 @@ const CarosalTest = () => {
       overflow="auto"
       className="carosalScrollNone"
     >
-      {TeamData.map((data) => {
+      {TeamData.map((data, index) => {
         return (
           <Flex
+            key={index}
             alignItems="center"
             justifyContent="center"
             my="10"
@@ -45,12 +46,12 @@ const CarosalTest = () => {
                 dynamicHeight={true}
                 autoFocus={false}
               >
-                {data.imgSrc.map((img) => {
+                {data.imgSrc.map((img, index) => {
                   return (
-                    <div>
+                    <div key={index}>
                       <Image
                         src={img.imgUrl}
-                        alt="1"
+                        alt={img.name}
                         width="50%"
                         height="50%"
                       />
