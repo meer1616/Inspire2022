@@ -12,8 +12,8 @@ const Homepage = () => {
     <Box>
       <Navbar />
       <PageContent />
-      <About />
       <Events />
+      <About />
     </Box>
   );
 };
