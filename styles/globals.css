@@ -27,7 +27,7 @@ body {
 }
 
 .bckImg{
-  background: rgba(0, 0, 0, 0.7) url("../public/bck.jpg");
+  background: rgba(0, 0, 0, 0.8) url("../public/homePage.gif");
   background-blend-mode: darken;
   background-repeat: no-repeat;
   background-size: cover;
@@ -41,4 +41,8 @@ body {
 }
 .styleFont{
   font-family: 'Headland One', serif;
+}
+
+.active{
+  color: #0487d3;
 }

@@ -7,10 +7,10 @@ export default function Home() {
   return (
     <Box >
       <Head>
-        <title>Create Next App</title>
+        <title>Inspire 2022</title>
         <meta
           name="description"
-          content="Tech-fest of C K Pithawala College of Engineering and technology"
+          content="Tech-fest Inspire 2022 of C.K Pithawala College of Engineering and technology"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

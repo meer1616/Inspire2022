@@ -1,6 +1,5 @@
 import React from "react";
-import { Box,Flex } from "@chakra-ui/react";
-import { Heading } from "@chakra-ui/react";
+import { Box,Flex,Heading  } from "@chakra-ui/react";
 import Card from "./Card.js";
 import CardData from "./CardData.js";
 

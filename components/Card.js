@@ -1,4 +1,4 @@
-import { Box, Badge, Link, Image } from "@chakra-ui/react";
+import { Box, Badge, Link, Image, Flex } from "@chakra-ui/react";
 import React from "react";
 // import Link from "next/Link"
 //import web from "../pages/assets/computer.png"
@@ -9,7 +9,10 @@ const Card = (props) => {
     // </Link>
 
     <Link text-decoration="none" href={props.route}>
-      <Box
+      <Flex
+      alignItems="center"
+      justifyContent="center"
+      flexDir="column"
         maxW="md"
         mb="15"
         m="25px"
@@ -35,11 +38,11 @@ const Card = (props) => {
             {props.title}
           </Box>
 
-          <Badge  px="3" py="1" ml="1" fontSize="15" colorScheme="teal" borderRadius="10">
+          {/* <Badge  px="3" py="1"  fontSize="15" colorScheme="teal" borderRadius="10">
             Events
-          </Badge>
+          </Badge> */}
         </Box>
-      </Box>
+      </Flex>
     </Link>
   );
 };

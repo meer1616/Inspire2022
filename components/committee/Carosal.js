@@ -13,7 +13,7 @@ const Carosal = ({ facultyCordinator, studentCordinator }) => {
   //         console.log("callback",index);
   //     }
   return (
-    <Box width="80%" margin="auto">
+    <Box width="80%" margin="auto" my="5">
 
       <Flex alignItems="center" justifyContent="center">
         {/* <Box width="40%">
@@ -21,7 +21,7 @@ const Carosal = ({ facultyCordinator, studentCordinator }) => {
           <Text className="styleFont" ml="20" fontSize="5xl">Committee </Text>
         </Box> */}
         <Box width="60%" mx="3">
-          <Text textAlign="center" fontSize="lg">Faculty Cordinator</Text>
+          <Text textAlign="center" fontSize="lg" my="3">Faculty Cordinator</Text>
 
           <Carousel
             showIndicators={true}
@@ -37,8 +37,8 @@ const Carosal = ({ facultyCordinator, studentCordinator }) => {
             dynamicHeight={true}
             autoFocus={false}
           >
-            {facultyCordinator.map((faculty) => {
-              return <div>
+            {facultyCordinator.map((faculty, index) => {
+              return <div key={index}>
                 <Image src="/bck.jpg" alt="1" />
                 <p className="legend" style={{ fontSize: "18px" }}>{faculty}</p>
               </div>
@@ -58,7 +58,7 @@ const Carosal = ({ facultyCordinator, studentCordinator }) => {
           </Carousel>
         </Box>
         <Box width="60%" mx="3">
-          <Text textAlign="center" fontSize="lg">Student Cordinator</Text>
+          <Text textAlign="center" fontSize="lg" my="3">Student Cordinator</Text>
           <Carousel
             showIndicators={true}
             infiniteLoop={true}
@@ -73,8 +73,8 @@ const Carosal = ({ facultyCordinator, studentCordinator }) => {
             dynamicHeight={true}
             autoFocus={false}
           >
-            {studentCordinator.map((faculty) => {
-              return <div>
+            {studentCordinator.map((faculty, index) => {
+              return <div key={index}>
                 <Image src="/bck.jpg" alt="1" />
                 <p className="legend" style={{ fontSize: "18px" }}>{faculty}</p>
               </div>

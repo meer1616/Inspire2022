@@ -10,9 +10,9 @@ const FacultyComittee = () => {
             {/* <Navbar /> */}
             <Box mt="24">
 
-                {Faculty.map((faculty) => {
-                    return <Box>
-                        <Text textAlign="center" fontSize="xl" fontWeight="medium" mt="5">{faculty.department}</Text>
+                {Faculty.map((faculty,index) => {
+                    return <Box key={index}>
+                        <Text textAlign="center" fontSize="2xl" fontWeight="medium" mt="14">{faculty.department}</Text>
                         {/* {faculty.facultyCordinatorName.map((faccord => { */}
                         <Carosal facultyCordinator={faculty.facultyCordinatorName} studentCordinator={faculty.studentCordinatorName} />
                         {/* }))} */}

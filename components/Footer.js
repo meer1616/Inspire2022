@@ -1,12 +1,15 @@
-import { Box, Divider, Flex, Text, Image } from "@chakra-ui/react";
+import { Box, Divider, Flex, Text, Image, Center } from "@chakra-ui/react";
 import React from "react";
 import Link from "next/link";
 // import Image from "next/image";
+import { BsInstagram, BsLinkedin } from "react-icons/bs"
+import { FaFacebookSquare } from "react-icons/fa"
+import { AiFillLinkedin } from "react-icons/ai"
 
 const Footer = () => {
   return (
-    <Box backgroundColor="blackAlpha.900" color="white">
-      <Flex alignItems="center" justifyContent="space-between" px="5">
+    <Box backgroundColor="black" color="white" py="2">
+      <Flex alignItems="center" justifyContent="space-between" px="5" flexDir={["column", "column", "row", "row"]}>
         <Box>
           {/* <Text>
             <span className="bold">I</span> - Inspire the community
@@ -29,15 +32,15 @@ const Footer = () => {
           <Text>
             <span className="bold">E</span> - Enterpreneur creating
           </Text> */}
-          <Image src="/logo_dark.png" width="56" alt="Inspire 2022"></Image>
+          <Image src="/Finallogo.png" width="56" alt="Inspire 2022"></Image>
         </Box>
 
         <Box>
-          <Text fontSize="3xl" textAlign="center">
+          <Text fontSize="2xl" textAlign="center">
             {" "}
-            Links
+            Link
           </Text>
-          <Box>
+          <Flex alignItems="center" justifyContent="center" flexWrap="wrap">
             <Link px="5" href="">
               <a className="marginof5">Home</a>
             </Link>
@@ -55,27 +58,41 @@ const Footer = () => {
             <Link px="5" href="">
               <a className="marginof5">Enroll Now</a>
             </Link>
-          </Box>
+          </Flex>
         </Box>
-        <Box>
-          <Text fontSize="3xl" textAlign="center">
+        <Box mt="5">
+          {/* <Text fontSize="3xl" textAlign="center">
             Socials
-          </Text>
-          <Box mx="1" display="inline-block">
-            <Image
+          </Text> */}
+          <Box display="inline-block" mx="2" >
+            {/* <Image
               src="/Instagram.svg"
               alt="Instagram"
-              height="33%"
-              width="50%"
-            ></Image>
+              height="100%"
+              width="100%"
+            ></Image> */}
+            <Link href="https://instagram.com/ckp_inspire22?utm_medium=copy_link"><a target="_blank" >
+              <BsInstagram fontSize="24px" />
+            </a>
+            </Link>
           </Box>
-          <Box mx="1" display="inline-block">
-            <Image
+          <Box display="inline-block" mx="2">
+            {/* <Image
               src="/Facebook.svg"
               alt="Instagram"
-              height="30%"
-              width="50%"
-            ></Image>
+              height="100%"
+              width="100%"
+            ></Image> */}
+            <FaFacebookSquare fontSize="26px" />
+          </Box>
+          <Box display="inline-block" mx="2">
+            {/* <Image
+              src="/Facebook.svg"
+              alt="Instagram"
+              height="100%"
+              width="100%"
+            ></Image> */}
+            <BsLinkedin fontSize="23.5px" />
           </Box>
         </Box>
       </Flex>
@@ -83,7 +100,7 @@ const Footer = () => {
       <Text textAlign="center" p="2" fontSize="lg">
         © 2021 Copyright: Inspire Innovator Club
       </Text>
-    </Box>
+    </Box >
   );
 };
 
