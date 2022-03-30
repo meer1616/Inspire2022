@@ -1,7 +1,9 @@
 import React from 'react'
 import {Box, Flex, Heading} from "@chakra-ui/react"
-import Card from "../Card";
-import Data from "./Data";
+// import Card from "../Card";
+import Card from "../../components/eventsData/Card";
+
+import AppliedScience from "../../components/eventsData/AppliedScience";
 
 const Comp = () => {
   return (
@@ -10,8 +12,8 @@ const Comp = () => {
     <Flex flexWrap="wrap" alignitem="center" justifyContent="center" padding="5">
 
     {
-      Data.map((value, index) => {
-        return <Card  key={index} imgsrc={value.imgsrc} title={value.title} description={value.description} rules={value.rules} judgecriteria={value.judgecriteria} contact={value.contact}/>;
+      AppliedScience.map((value, index) => {
+        return <Card  key={index} imgsrc={value.imgsrc} title={value.title} description={value.description} rules={value.rules} judgecriteria={value.judgecriteria} route={value.route} Criteria={value.Criteria} contact={value.contact}/>;
       })
     }
     </Flex>

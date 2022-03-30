@@ -1,22 +1,16 @@
-import { Box, Badge, Link, Image } from "@chakra-ui/react";
 import React from "react";
-// import Link from "next/Link"
-//import web from "../pages/assets/computer.png"
+import { Box, Badge, Link, Image } from "@chakra-ui/react";
 
-const Card = (props) => {
+const Cards = (props) => {
   return (
-    // <Link>
-    // </Link>
-
     <Link text-decoration="none" href={props.route}>
       <Box
+        boxShadow='xl'
         maxW="sm"
-        mb="15"
-        m="25px"
-        shadow="lg"
-        borderWidth="1px"
-        border
-        borderRadius="lg"
+        m="10px"
+        
+        borderWidth="2px"
+        rounded="lg"
         overflow="hidden"
       >
         <Image src={props.imgsrc} alt="Cannot Display" />
@@ -34,7 +28,7 @@ const Card = (props) => {
           </Box>
 
           <Badge ml="1" fontSize="15" colorScheme="teal" borderRadius="10">
-            Events
+            Details
           </Badge>
         </Box>
       </Box>
@@ -42,4 +36,4 @@ const Card = (props) => {
   );
 };
 
-export default Card;
+export default Cards;
