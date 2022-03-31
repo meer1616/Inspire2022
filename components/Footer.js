@@ -8,59 +8,14 @@ import { AiFillLinkedin } from "react-icons/ai"
 
 const Footer = () => {
   return (
-    <Box backgroundColor="black" color="white" py="2">
-      <Flex alignItems="center" justifyContent="space-between" px="5" flexDir={["column", "column", "row", "row"]}>
-        <Box>
-          {/* <Text>
-            <span className="bold">I</span> - Inspire the community
-          </Text>
-          <Text>
-            <span className="bold">N</span> - Needs of young technocrates mind
-          </Text>
-          <Text>
-            <span className="bold">S</span> - Serve the society
-          </Text>
-          <Text>
-            <span className="bold">P</span> - Progress making in students life
-          </Text>
-          <Text>
-            <span className="bold">I</span> - Indicator of bright future
-          </Text>
-          <Text>
-            <span className="bold">R</span> - Right way to unity
-          </Text>
-          <Text>
-            <span className="bold">E</span> - Enterpreneur creating
-          </Text> */}
-          <Image src="/Finallogo.png" width="56" alt="Inspire 2022"></Image>
-        </Box>
-
-        <Box>
-          <Text fontSize="2xl" textAlign="center">
-            {" "}
-            Link
-          </Text>
-          <Flex alignItems="center" justifyContent="center" flexWrap="wrap">
-            <Link px="5" href="">
-              <a className="marginof5">Home</a>
-            </Link>
-            <Link px="5" href="">
-              <a className="marginof5">Events</a>
-            </Link>
-            <Link px="5" href="">
-              <a className="marginof5">About Us</a>
-            </Link>
-            {/* </Box> */}
-            {/* <Box> */}
-            <Link px="5" href="">
-              <a className="marginof5">Faculty Committee</a>
-            </Link>
-            <Link px="5" href="">
-              <a className="marginof5">Enroll Now</a>
-            </Link>
-          </Flex>
-        </Box>
-        <Box mt="5">
+    <Box backgroundColor="black" color="white" py="3">
+      <Flex alignItems="center" justifyContent="space-between" width="95%" m="auto">
+        <Flex justifyContent="center" alignItems="center">
+          <Image src="/Finallogo.png" width="56"></Image>
+          <Box border="1px" backgroundColor="white" height="10" mx="4"></Box>
+          <Text fontSize="xl">@ 2022 Inspire</Text>
+        </Flex>
+        <Box >
           {/* <Text fontSize="3xl" textAlign="center">
             Socials
           </Text> */}
@@ -96,10 +51,6 @@ const Footer = () => {
           </Box>
         </Box>
       </Flex>
-      <Divider />
-      <Text textAlign="center" p="2" fontSize="lg">
-        © 2021 Copyright: Inspire Innovator Club
-      </Text>
     </Box >
   );
 };

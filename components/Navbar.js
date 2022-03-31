@@ -79,13 +79,13 @@ const Navbar = () => {
           // border="1px"
           >
             <Box>
-              <Text>Logo</Text>
+              <Text>Log</Text>
             </Box>
             <Box>
               {/* <Button ref={btnRef} colorScheme="teal" onClick={onOpen}>
                 Open
               </Button> */}
-              <CgMenuRightAlt fontSize="25px" ref={btnRef} colorScheme="teal" onClick={onOpen} src="/right-align.png" src="open"></CgMenuRightAlt>
+              <CgMenuRightAlt fontSize="25px" ref={btnRef} colorScheme="teal" onClick={onOpen} src="/right-align.png" ></CgMenuRightAlt>
               <Drawer
                 isOpen={isOpen}
                 placement="right"
