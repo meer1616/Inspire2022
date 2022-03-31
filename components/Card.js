@@ -1,6 +1,6 @@
-import { Box, Badge, Link, Image, Flex } from "@chakra-ui/react";
+import { Box, Badge, Image, Flex } from "@chakra-ui/react";
 import React from "react";
-// import Link from "next/Link"
+import Link from "next/Link"
 //import web from "../pages/assets/computer.png"
 
 const Card = (props) => {
@@ -9,11 +9,8 @@ const Card = (props) => {
     // </Link>
 
     <Link text-decoration="none" href={props.route}>
-      <Flex
-      alignItems="center"
-      justifyContent="center"
-      flexDir="column"
-        maxW="md"
+      <Box
+        maxW="sm"
         mb="15"
         m="25px"
         shadow="lg"
@@ -24,25 +21,27 @@ const Card = (props) => {
         // padding="5"
         pt="5"
       >
-        <Image src={props.imgsrc} width="80%" alt="Cannot Display" />
+        <Flex flexDir="column" alignItems="center" justifyContent="center">
+          <Image src={props.imgsrc} width="80%" alt="Cannot Display" />
 
-        <Box p="15">
-          <Box
-            color="black"
-            fontWeight="semibold"
-            letterSpacing="wide"
-            fontSize="18"
-            textTransform="uppercase"
-            text-align="center"
-          >
-            {props.title}
-          </Box>
+          <Box p="15">
+            <Box
+              color="black"
+              fontWeight="semibold"
+              letterSpacing="wide"
+              fontSize="18"
+              textTransform="uppercase"
+              text-align="center"
+            >
+              {props.title}
+            </Box>
 
-          {/* <Badge  px="3" py="1"  fontSize="15" colorScheme="teal" borderRadius="10">
+            {/* <Badge  px="3" py="1"  fontSize="15" colorScheme="teal" borderRadius="10">
             Events
           </Badge> */}
-        </Box>
-      </Flex>
+          </Box>
+        </Flex>
+      </Box>
     </Link>
   );
 };

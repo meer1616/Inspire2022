@@ -1,7 +1,7 @@
 import React from 'react'
 import {Box, Flex, Heading} from "@chakra-ui/react"
-import Card from "../Card";
-import Data from "./Data";
+import Card from "../../components/eventsData/Card";
+import Mechanical from "../../components/eventsData/Mechanical";
 
 const Comp = () => {
   return (
@@ -10,8 +10,8 @@ const Comp = () => {
     <Flex flexWrap="wrap" alignitem="center" justifyContent="center" padding="5">
 
     {
-      Data.map((value, index) => {
-        return <Card  key={index} imgsrc={value.imgsrc} title={value.title} description={value.description} rules={value.rules} judgecriteria={value.judgecriteria} contact={value.contact}  />;
+      Mechanical.map((value, index) => {
+        return <Card  key={index} imgsrc={value.imgsrc} title={value.title} description={value.description} rules={value.rules} judgecriteria={value.judgecriteria} Category={value.Category} route={value.route} contact={value.contact}  />;
       })
     }
     </Flex>

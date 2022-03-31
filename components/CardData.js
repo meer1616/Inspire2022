@@ -13,7 +13,7 @@ const CardData = [
   {
     imgsrc: "/assets/ec.png",
     title: "Electronics and Communication",
-    route: "/es"
+    route: "/ec"
   },
   {
     imgsrc: "/assets/civil.png",

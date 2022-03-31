@@ -19,8 +19,8 @@ const Homepage = () => {
     <Box className="styleFont" mt={["0", "0", "10", "10"]}>
       {/* <Navbar /> */}
       <PageContent />
-      {/* <Events /> */}
-      <EventCarosal />
+      <Events />
+      {/* <EventCarosal /> */}
       {/* <About /> */}
       {/* <Footer /> */}
       {/* <Carosal /> */}
