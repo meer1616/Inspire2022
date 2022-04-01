@@ -2,7 +2,7 @@ import {
   Box,
   Button,
   Flex,
-  Text,
+  Spacer,
   useDisclosure,
   Drawer,
   DrawerOverlay,
@@ -25,94 +25,84 @@ const Navbar = () => {
   return (
     <Box>
       {isLargerThan1280 ? (
-        <Box
-          className="center"
-          zIndex="10"
-          px="10"
-          // alignItems="center"
-          // justifyContent="space-between"
-          background="black"
-          color="white"
-          position="fixed"
-          top="0"
-          width="100%"
-          //   left="0"
-          py="2"
-          // style={{ backgroundColor: "black" }}
-        >
-          <Box>
-            <Image src="/Finallogo.png" alt="Inspire 2022" width="44"></Image>
-            {/* <Text color={["red", "blue"]}>Logo</Text> */}
-          </Box>
-          <Box fontSize="large" letterSpacing="wide">
-            <NavLink px="5" href="/">
-              <a
-                className={
-                  router.pathname == "/" ? "active marginof5" : "marginof5"
-                }
-              >
-                Home
-              </a>
-            </NavLink>
-            <NavLink px="5" href="/#events">
-              <a
-                className={
-                  router.pathname == "/#events"
-                    ? "active marginof5"
-                    : "marginof5"
-                }
-              >
-                Events
-              </a>
-            </NavLink>
-            <NavLink px="5" href="/about">
-              <a
-                className={
-                  router.pathname == "/about" ? "active marginof5" : "marginof5"
-                }
-              >
-                About Us
-              </a>
-            </NavLink>
-            <NavLink px="5" href="/ourteam">
-              <a
-                className={
-                  router.pathname == "/ourteam"
-                    ? "active marginof5"
-                    : "marginof5"
-                }
-              >
-                Our Team
-              </a>
-            </NavLink>
-            <NavLink px="5" href="/faculty-committee">
-              <a
-                className={
-                  router.pathname == "/faculty-committee"
-                    ? "active marginof5"
-                    : "marginof5"
-                }
-              >
-                Faculty Committee
-              </a>
-            </NavLink>
-            <NavLink px="5" href="#enroll">
-              <a
-                className={
-                  router.pathname == "/enroll"
-                    ? "active marginof5"
-                    : "marginof5"
-                }
-              >
-                Enroll Now
-              </a>
-            </NavLink>
-            {/* <Link px="5">Events</Link>
+        <Box position="fixed" zIndex='10' width='100%'>
+          <Flex backgroundColor="#111" color="white" alignItems="center">
+            <Box p="4">
+              <Image src="/Finallogo.png" alt="Inspire 2022" htmlWidth="128" />
+            </Box>
+            <Spacer />
+            <Box p="4" letterSpacing="wide">
+              <NavLink px="5" href="/">
+                <a
+                  className={
+                    router.pathname == "/" ? "active marginof5" : "marginof5"
+                  }
+                >
+                  Home
+                </a>
+              </NavLink>
+              <NavLink px="5" href="/#events">
+                <a
+                  className={
+                    router.pathname == "/#events"
+                      ? "active marginof5"
+                      : "marginof5"
+                  }
+                >
+                  Events
+                </a>
+              </NavLink>
+              <NavLink px="5" href="/about">
+                <a
+                  className={
+                    router.pathname == "/about"
+                      ? "active marginof5"
+                      : "marginof5"
+                  }
+                >
+                  About Us
+                </a>
+              </NavLink>
+              <NavLink px="5" href="/ourteam">
+                <a
+                  className={
+                    router.pathname == "/ourteam"
+                      ? "active marginof5"
+                      : "marginof5"
+                  }
+                >
+                  Our Team
+                </a>
+              </NavLink>
+              <NavLink px="5" href="/faculty-committee">
+                <a
+                  className={
+                    router.pathname == "/faculty-committee"
+                      ? "active marginof5"
+                      : "marginof5"
+                  }
+                >
+                  Faculty Committee
+                </a>
+              </NavLink>
+              <NavLink px="5" href="#enroll">
+                <a
+                  className={
+                    router.pathname == "/enroll"
+                      ? "active marginof5"
+                      : "marginof5"
+                  }
+                >
+                  Enroll Now
+                </a>
+              </NavLink>
+              {/* <Link px="5">Events</Link>
                 <Link px="5">Our Team</Link>
                 <Link px="5">About Us</Link>
                 <Link px="5">Faculty Committee</Link>
                 <Link px="5">Enroll now</Link> */}
-          </Box>
+            </Box>
+          </Flex>
         </Box>
       ) : (
         <Box backgroundColor="black" color="white">

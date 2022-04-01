@@ -27,7 +27,7 @@ body {
 }
 
 .bckImg{
-  background: rgba(0, 0, 0, 0.6) url("../public/homePage.gif");
+  background: rgba(0, 0, 0, 0.9) url("/homePage.gif");
   background-blend-mode: darken;
   background-repeat: no-repeat;
   background-size: cover;
@@ -46,8 +46,24 @@ body {
 .active{
   color: #0487d3;
 }
-.center{
-  display: flex;
+.center{  
   align-items: center;
   justify-content: space-between;
 }
+
+
+.container{
+  max-width: 1024px;
+  margin: auto;
+  padding: 2em;
+}
+
+
+.content{
+  text-align: justify;
+}
+.content > p {
+  font-weight: 400;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+} 
