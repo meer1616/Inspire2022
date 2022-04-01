@@ -12,11 +12,11 @@ const PageContent = () => {
                 height="100vh"
                 color="white"
             >
-                <Box mb="64" textAlign="center">
+                <Box mb={["48", "52", "56", "64"]} textAlign="center">
 
-                    <Text fontSize="5xl">Inspire 2022</Text>
-                    <Text fontSize="3xl" my="2">C.K. Pithawala College of Engineering and Technology</Text>
-                    <Text fontSize="3xl" my="2">11-12 April, 2022</Text>
+                    <Text fontSize={["2xl", "3xl", "4xl", "4xl"]}>Inspire 2022</Text>
+                    <Text fontSize={["xl", "3xl", "4xl", "4xl"]} my="2" px="5">C.K. Pithawala College of Engineering and Technology</Text>
+                    <Text fontSize={["xl", "3xl", "4xl", "4xl"]} my="2">11-12 April, 2022</Text>
 
                 </Box >
 

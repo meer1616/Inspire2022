@@ -1,4 +1,7 @@
 import React from "react";
+import { IoIosArrowRoundBack } from "react-icons/io";
+import Link from "next/link";
+
 // import Data from "./Data";
 import {
   Box,
@@ -21,14 +24,28 @@ const Lan = () => {
   };
 
   return (
-    <Box p="10">
+    <Box p={["2", "2", "5", "10"]} mt={["0", "5", "15", "20"]}>
       <Container
         maxW="1200"
-        boxShadow="dark-lg"
+        boxShadow="0 5px 10px gray"
         p="6"
         rounded="xl"
         bg="blackAlpha.300"
+        width={["95%", "90%", "80%", "70%"]}
+        margin="auto"
+        position="relative"
       >
+        <Box position="absolute" top={["2", "2", "3", "4"]} cursor="pointer">
+          {/* <Text> Back</Text> */}
+          <Link href="/computer">
+            <a >
+              <Flex color="blue.500">
+                <IoIosArrowRoundBack fontSize="25px" />
+                <Text>Back</Text>
+              </Flex>
+            </a>
+          </Link>
+        </Box>
         <Heading
           p="5"
           fontSize="45"
@@ -46,20 +63,28 @@ const Lan = () => {
           letterSpacing="wide"
           fontSize="20"
         >
-          <Flex>
+          <Flex flexDir={["column", "column", "column", "row"]}>
             <Image
               src={details.imgsrc}
-              height="500"
+              height={["", "", "", "500"]}
               width="500"
               alt="Cannot Display"
             />
-            <Box>
-              <Heading>Event Category</Heading>
+            <Box ml="30" fontSize={["md", "md", "lg", "lg"]}>
+              <Text fontSize={["2xl", "2xl", "4xl", "4xl"]} fontWeight="bold">
+                Event Category
+              </Text>
 
               <Text m="3">{details.Category}</Text>
 
               <Box>
-                <Heading mb="20px">Description</Heading>
+                <Text
+                  fontSize={["2xl", "2xl", "4xl", "4xl"]}
+                  fontWeight="bold"
+                  mb="20px"
+                >
+                  Description
+                </Text>
                 <Text>Number of games : 2</Text>
                 <OrderedList>
                   <ListItem>
@@ -95,8 +120,19 @@ const Lan = () => {
             </Box>
           </Flex>
 
-          <Box p="10" pl="70">
-            <Heading mb="20px"> Rules</Heading>
+          <Box
+            p="10"
+            pl={["", "", "", "70"]}
+            fontSize={["md", "md", "lg", "lg"]}
+          >
+            <Text
+              fontSize={["2xl", "2xl", "4xl", "4xl"]}
+              fontWeight="bold"
+              mb="20px"
+            >
+              {" "}
+              Rules
+            </Text>
             <UnorderedList>
               <ListItem>
                 The organizer has the right to change any rules, if needed.

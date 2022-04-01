@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Heading, Flex, Container, Text, Image } from "@chakra-ui/react";
-
+import { IoIosArrowRoundBack } from "react-icons/io"
 import {
   List,
   ListItem,
@@ -8,6 +8,7 @@ import {
   OrderedList,
   UnorderedList,
 } from "@chakra-ui/react";
+import Link from "next/link";
 
 const Tresurehunt = () => {
   const details = {
@@ -18,17 +19,34 @@ const Tresurehunt = () => {
   };
 
   return (
-    <Box p="10">
+    <Box p={["2", "2", "5", "10"]} mt={["", "5", "15", "20"]} >
       <Container
+        position="relative"
         maxW="1200"
-        boxShadow="dark-lg"
+        // boxShadow="dark-lg"
+        boxShadow="0 5px 10px gray"
+        width={["95%", "90%", "80%", "70%"]}
+        margin="auto"
         p="6"
         rounded="xl"
         bg="blackAlpha.300"
       >
+        <Box position="absolute" top={["2", "2", "3", "4"]} cursor="pointer" >
+          {/* <Text> Back</Text> */}
+          <Link href="/computer" >
+            <a >
+              <Flex color="blue.500">
+                <IoIosArrowRoundBack fontSize="25px" />
+                <Text>
+                  Back
+                </Text>
+              </Flex>
+            </a>
+          </Link>
+        </Box>
         <Heading
           p="5"
-          fontSize="45"
+          fontSize={["3xl", "", "", "45"]}
           fontFamily="Helvetica"
           align="center"
           textShadow="2px 2px #008080"
@@ -43,19 +61,24 @@ const Tresurehunt = () => {
           letterSpacing="wide"
           fontSize="20"
         >
-          <Flex>
+          <Flex flexDir={["column", "column", "column", "row"]}>
             <Image
               src={details.imgsrc}
-              height="400"
+              height={["", "", "", "400"]}
               width="400"
               alt="Cannot Display"
             />
             <Box>
-              <Box ml="70">
-                <Heading>Event Category</Heading>
+              <Box ml={["", "", "", "70"]} fontSize="lg">
+                <Heading fontSize={["2xl", "2xl", "3xl", "4xl"]}>
+                  Event Category
+                </Heading>
 
                 <Text m="3">{details.Category}</Text>
-                <Heading mb="20px"> Rules</Heading>
+                <Heading mb="20px" fontSize={["2xl", "2xl", "3xl", "4xl"]}>
+                  {" "}
+                  Rules
+                </Heading>
                 <Text>There will be 3 levels.</Text>
                 <UnorderedList>
                   <ListItem>

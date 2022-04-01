@@ -13,15 +13,20 @@ const Carosal = ({ facultyCordinator, studentCordinator }) => {
   //         console.log("callback",index);
   //     }
   return (
-    <Box width="80%" margin="auto" my="5">
-
-      <Flex alignItems="center" justifyContent="center">
+    <Box width="90%" margin="auto" my={["", "", "", "5"]}>
+      <Flex
+        alignItems="center"
+        justifyContent="center"
+        flexDir={["column", "column", "row", "row"]}
+      >
         {/* <Box width="40%">
           <Text className="styleFont" fontSize="5xl">Technical </Text>
           <Text className="styleFont" ml="20" fontSize="5xl">Committee </Text>
         </Box> */}
-        <Box width="60%" mx="3">
-          <Text textAlign="center" fontSize="lg" my="3">Faculty Cordinator</Text>
+        <Box width={["100%", "100%", "80%", "60%"]} mx="3">
+          <Text textAlign="center" fontSize="lg" my="3">
+            Faculty Cordinator
+          </Text>
 
           <Carousel
             showIndicators={true}
@@ -38,10 +43,14 @@ const Carosal = ({ facultyCordinator, studentCordinator }) => {
             autoFocus={false}
           >
             {facultyCordinator.map((faculty, index) => {
-              return <div key={index}>
-                <Image src="/bck.jpg" alt="1" />
-                <p className="legend" style={{ fontSize: "18px" }}>{faculty}</p>
-              </div>
+              return (
+                <div key={index}>
+                  <Image src="/bck.jpg" alt="1" />
+                  <Text className="legend" fontSize="xl">
+                    {faculty}
+                  </Text>
+                </div>
+              );
             })}
             {/* <div>
               <Image src="/bck.jpg" alt="1" />
@@ -57,8 +66,10 @@ const Carosal = ({ facultyCordinator, studentCordinator }) => {
             </div> */}
           </Carousel>
         </Box>
-        <Box width="60%" mx="3">
-          <Text textAlign="center" fontSize="lg" my="3">Student Cordinator</Text>
+        <Box width={["100%", "100%", "80%", "60%"]} mx="3">
+          <Text textAlign="center" fontSize="lg" my="3">
+            Student Cordinator
+          </Text>
           <Carousel
             showIndicators={true}
             infiniteLoop={true}
@@ -74,10 +85,18 @@ const Carosal = ({ facultyCordinator, studentCordinator }) => {
             autoFocus={false}
           >
             {studentCordinator.map((faculty, index) => {
-              return <div key={index}>
-                <Image src="/bck.jpg" alt="1" />
-                <p className="legend" style={{ fontSize: "18px" }}>{faculty}</p>
-              </div>
+              return (
+                <div key={index}>
+                  <Image src="/bck.jpg" alt="1" />
+                  <Text
+                    className="legend"
+                    fontSize="xl"
+                    // style={{ fontSize: "25px" }}
+                  >
+                    {faculty}
+                  </Text>
+                </div>
+              );
             })}
             {/* <div>
               <Image src="/bck.jpg" alt="1" />
@@ -93,9 +112,7 @@ const Carosal = ({ facultyCordinator, studentCordinator }) => {
             </div> */}
           </Carousel>
         </Box>
-
       </Flex>
-
     </Box>
   );
 };

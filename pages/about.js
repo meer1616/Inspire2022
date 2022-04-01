@@ -3,13 +3,30 @@ import React from "react";
 
 const About = () => {
   return (
-    <Box height="100vh" id="about" width="80%" m="auto">
-      <Text textAlign="center" fontSize="3xl" mb="12">
+    <Box
+      height={["", "", "", "100vh"]}
+      id="about"
+      width="80%"
+      m="auto"
+      mt={["10", "10", "24", "32"]}
+    >
+      {/* <Text textAlign="center" fontSize="3xl" mb="12">
         About
-      </Text>
-      <Flex alignItems="center" justifyContent="center" height="80%">
-        <Box width="50%">
-          <Text width="90%" fontSize="xl">
+      </Text> */}
+      <Flex
+        alignItems="center"
+        justifyContent="center"
+        height="80%"
+        flexDir={["column-reverse", "column-reverse", "row", "row"]}
+        my={["7", "7", "", ""]}
+      >
+        <Box width={["95%", "95%", "70%", "50%"]}>
+          <Text
+            width={["", "", "", "90%"]}
+            fontSize={["lg", "lg", "xl", "xl"]}
+            fontWeight="medium"
+            my={["7", "7", "", ""]}
+          >
             C K Pithawala College of Engineering and Technology, Surat welcomes
             you all for the Grand Technical Festival, Inspire - 2022 on April 11
             & 12, 2022. It is a matter of great pride to announce that the
@@ -23,8 +40,8 @@ const About = () => {
             part of the Technical Extravaganza - Inspire 2022
           </Text>
         </Box>
-        <Box width="50%">
-          <Image src="/aboutImg.svg"></Image>
+        <Box width={["95%", "95%", "70%", "50%"]}>
+          <Image src="/aboutImg.svg" alt="About Image"></Image>
         </Box>
       </Flex>
     </Box>

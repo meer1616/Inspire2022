@@ -10,6 +10,8 @@ import {
   Text,
   Image,
 } from "@chakra-ui/react";
+import Link from "next/link";
+import { IoIosArrowRoundBack } from "react-icons/io";
 
 const Web = () => {
   const details = {
@@ -20,17 +22,32 @@ const Web = () => {
   };
 
   return (
-    <Box p="10">
+    <Box p={["2", "2", "5", "10"]} mt={["0", "5", "15", "20"]}>
       <Container
         maxW="1200"
-        boxShadow="dark-lg"
+        // boxShadow="dark-lg"
+        boxShadow="0 5px 10px gray"
         p="6"
         rounded="xl"
         bg="blackAlpha.300"
+        width={["95%", "90%", "80%", "70%"]}
+        margin="auto"
+        position="relative"
       >
+        <Box position="absolute" top={["2", "3", "4", "4"]} cursor="pointer">
+          {/* <Text> Back</Text> */}
+          <Link href="/civil">
+            <a>
+              <Flex color="blue.500">
+                <IoIosArrowRoundBack fontSize="25px" />
+                <Text>Back</Text>
+              </Flex>
+            </a>
+          </Link>
+        </Box>
         <Heading
           p="5"
-          fontSize="45"
+          fontSize={["35", "40", "42", "45"]}
           fontFamily="Helvetica"
           align="center"
           textShadow="2px 2px #008080"
@@ -45,14 +62,14 @@ const Web = () => {
           letterSpacing="wide"
           fontSize="20"
         >
-          <Flex>
+          <Flex flexDir={["column", "column", "column", "row"]}>
             <Image
               src={details.imgsrc}
-              height="400"
+              height={["", "", "", "400"]}
               width="400"
               alt="Cannot Display"
             />
-            <Box pl="30">
+            <Box pl={["", "", "", "30"]}>
               <Heading>Event Category</Heading>
 
               <Text m="3">{details.Category}</Text>
@@ -88,7 +105,7 @@ const Web = () => {
             </Box>
           </Flex>
 
-          <Box p="20">
+          <Box p={["2", "2", "", "20"]}>
             <Box>
               <Heading mb="20px"> Judging Criterias</Heading>
 

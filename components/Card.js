@@ -1,6 +1,6 @@
-import { Box, Badge, Image, Flex } from "@chakra-ui/react";
+import { Box, Badge, Link, Image, Flex } from "@chakra-ui/react";
 import React from "react";
-import Link from "next/Link"
+// import Link from "next/Link";
 //import web from "../pages/assets/computer.png"
 
 const Card = (props) => {
@@ -8,11 +8,11 @@ const Card = (props) => {
     // <Link>
     // </Link>
 
-    <Link text-decoration="none" href={props.route}>
+    <Link textDecoration="none" href={props.route}>
       <Box
         maxW="sm"
         mb="15"
-        m="25px"
+        m="10"
         shadow="lg"
         borderWidth="1px"
         // border

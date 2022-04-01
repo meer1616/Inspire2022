@@ -16,7 +16,10 @@ import PageContent from "./PageContent";
 
 const Homepage = () => {
   return (
-    <Box className="styleFont" mt={["0", "0", "10", "10"]}>
+    <Box
+      className="styleFont"
+      // mt={["0", "0", "10", "10"]}
+    >
       {/* <Navbar /> */}
       <PageContent />
       <Events />
@@ -26,7 +29,6 @@ const Homepage = () => {
       {/* <Carosal /> */}
       {/* <CountDownTimer /> */}
     </Box>
-
   );
 };
 

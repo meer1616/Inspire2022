@@ -10,6 +10,8 @@ import {
   Text,
   Image,
 } from "@chakra-ui/react";
+import { IoIosArrowRoundBack } from "react-icons/io";
+import Link from "next/link";
 
 const Web = () => {
   const details = {
@@ -20,14 +22,29 @@ const Web = () => {
   };
 
   return (
-    <Box p="10">
+    <Box p={["2", "2", "5", "10"]} mt={["0", "5", "15", "20"]}>
       <Container
+        position="relative"
         maxW="1200"
-        boxShadow="dark-lg"
-        p="6"
+        boxShadow="0 5px 10px gray"
+        p={["", "", "", "6"]}
+        py="2"
         rounded="xl"
         bg="blackAlpha.300"
+        width={["95%", "90%", "80%", "70%"]}
+        margin="auto"
       >
+        <Box position="absolute" top={["2", "2", "3", "4"]} cursor="pointer">
+          {/* <Text> Back</Text> */}
+          <Link href="/computer">
+            <a >
+              <Flex color="blue.500">
+                <IoIosArrowRoundBack fontSize="25px" />
+                <Text>Back</Text>
+              </Flex>
+            </a>
+          </Link>
+        </Box>
         <Heading
           p="5"
           fontSize="45"
@@ -44,23 +61,23 @@ const Web = () => {
           color="black"
           fontWeight="semibold"
           letterSpacing="wide"
-          fontSize="20"
+          fontSize="18"
         >
-          <Flex>
+          <Flex flexDir={["column", "column", "column", "row"]}>
             <Image
               src={details.imgsrc}
-              pt="10"
-              height="400"
+              // pt="10"
+              height={["", "", "", "400"]}
               width="400"
               alt="Cannot Display"
             />
-            <Box ml="50px">
-              <Heading>Event Category</Heading>
+            <Box ml={["", "", "", "50px"]} fontSize={["17", "md", "", "lg"]}>
+              <Heading mt="3">Event Category</Heading>
 
-              <Text m="3">{details.Category}</Text>
+              <Text m={["", "", "", "3"]}>{details.Category}</Text>
 
               <Box>
-                <Heading mb="20px"> Rules</Heading>
+                <Heading my="20px"> Rules</Heading>
                 <UnorderedList>
                   <ListItem>
                     During the contest, Participants can use any Language or
@@ -88,8 +105,8 @@ const Web = () => {
           </Flex>
 
           <Box>
-            <Box>
-              <Heading mb="20px"> Judging Criterias</Heading>
+            <Box fontSize={["17", "md", "", "lg"]}>
+              <Heading my="20px"> Judging Criterias</Heading>
               <UnorderedList>
                 <ListItem>
                   Uniformity in design. ( keeping the essence the same and

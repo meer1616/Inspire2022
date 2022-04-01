@@ -46,3 +46,8 @@ body {
 .active{
   color: #0487d3;
 }
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

@@ -1,8 +1,8 @@
 import React from "react";
-import Data from "./Data";
+// import Data from "./Data";
 import { Box, Heading, Flex, Text } from "@chakra-ui/react";
 import Format from "../Format";
-import Navbar from "../../components/Navbar";
+import Navbar from "../Navbar";
 
 const Web = () => {
   const details = {
@@ -34,7 +34,6 @@ const Web = () => {
         />
       </Box>
     </Box>
-
   );
 };
 

@@ -7,13 +7,13 @@ const Cards = (props) => {
       <Box
         boxShadow='xl'
         maxW="sm"
-        m="10px"
-        
+        m="8"
+        p="3"
         borderWidth="2px"
         rounded="lg"
         overflow="hidden"
       >
-        <Image src={props.imgsrc} alt="Cannot Display" />
+        <Image width="80%" src={props.imgsrc} alt="Cannot Display" />
 
         <Box p="15">
           <Box

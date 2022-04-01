@@ -20,12 +20,12 @@ const CountDownTimer = () => {
   };
   return (
     <Box>
-      <Flex>
+      <Flex flexWrap="wrap">
 
-        <Box mx="5" fontSize="2xl" className="styleFont"><Text textAlign="center" className="active">{timing.remDays}</Text><Text >Days</Text> </Box>
-        <Box mx="5" fontSize="2xl" className="styleFont"><Text textAlign="center" className="active">{timing.remHour}</Text><Text>Hour</Text> </Box>
-        <Box mx="5" fontSize="2xl" className="styleFont"><Text textAlign="center" className="active">{timing.remMin}</Text><Text>Minute</Text> </Box>
-        <Box mx="5" fontSize="2xl" className="styleFont"><Text textAlign="center" className="active">{timing.remSec}</Text><Text>Second</Text> </Box>
+        <Box mx={["1", "2", "3", "5"]} fontSize={["xl", "xl", "2xl", "2xl"]} className="styleFont"><Text textAlign="center" className="active">{timing.remDays}</Text><Text >Days</Text> </Box>
+        <Box mx={["1", "2", "3", "5"]} fontSize={["xl", "xl", "2xl", "2xl"]} className="styleFont"><Text textAlign="center" className="active">{timing.remHour}</Text><Text>Hour</Text> </Box>
+        <Box mx={["1", "2", "3", "5"]} fontSize={["xl", "xl", "2xl", "2xl"]} className="styleFont"><Text textAlign="center" className="active">{timing.remMin}</Text><Text>Minute</Text> </Box>
+        <Box mx={["1", "2", "3", "5"]} fontSize={["xl", "xl", "2xl", "2xl"]} className="styleFont"><Text textAlign="center" className="active">{timing.remSec}</Text><Text>Second</Text> </Box>
       </Flex>
     </Box>
   );
