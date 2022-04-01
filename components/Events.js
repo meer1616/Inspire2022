@@ -7,7 +7,7 @@ const Events = () => {
   return (
     <Box mx="auto" my="5" mb="20px" align="center" justifyContent="center" id="events">
       <Text my="8" fontSize="3xl" fontWeight="semibold">Department events</Text>
-      <Flex flexWrap="wrap" alignitem="center" justifyContent="center" padding="5">
+      <Flex flexWrap="wrap" alignitem="center" justifyContent="center" padding="">
 
       {
         CardData.map((value, index) => {

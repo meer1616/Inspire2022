@@ -31,7 +31,7 @@ const Navbar = () => {
               <Image src="/Finallogo.png" alt="Inspire 2022" htmlWidth="128" />
             </Box>
             <Spacer />
-            <Box p="4" letterSpacing="wide">
+            <Box p="4" className="nav" letterSpacing="wide">
               <NavLink px="5" href="/">
                 <a
                   className={

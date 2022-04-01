@@ -12,7 +12,7 @@ const About = () => {
             className="content"
           >
             <p>
-              C K Pithawala College of Engineering and Technology, Surat
+              C. K. Pithawala College of Engineering and Technology, Surat
               welcomes you all for the Grand Technical Festival, Inspire - 2022
               on April 11 &amp; 12, 2022.
             </p>
@@ -27,9 +27,10 @@ const About = () => {
               These events are being organized by the Experienced Faculty
               Coordinators along with the Joyous & Spirited Students. Apart from
               this, there will be plenty of on-the-spot events also, to
-              entertain you as always. Be a part of the Technical Extravaganza -
-              Inspire 2022
+              entertain you as always.
             </p>
+            <p> Be a part of the Technical Extravaganza -
+              Inspire 2022🥳</p>
           </Text>
         </Box>
         <Box width={["95%", "95%", "70%", "50%"]}>
