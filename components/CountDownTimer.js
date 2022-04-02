@@ -21,11 +21,62 @@ const CountDownTimer = () => {
   return (
     <Box>
       <Flex flexWrap="wrap">
-
-        <Box mx={["1", "2", "3", "5"]} fontSize={["xl", "xl", "2xl", "2xl"]} className="styleFont"><Text textAlign="center" className="active">{timing.remDays}</Text><Text >Days</Text> </Box>
-        <Box mx={["1", "2", "3", "5"]} fontSize={["xl", "xl", "2xl", "2xl"]} className="styleFont"><Text textAlign="center" className="active">{timing.remHour}</Text><Text>Hour</Text> </Box>
-        <Box mx={["1", "2", "3", "5"]} fontSize={["xl", "xl", "2xl", "2xl"]} className="styleFont"><Text textAlign="center" className="active">{timing.remMin}</Text><Text>Minute</Text> </Box>
-        <Box mx={["1", "2", "3", "5"]} fontSize={["xl", "xl", "2xl", "2xl"]} className="styleFont"><Text textAlign="center" className="active">{timing.remSec}</Text><Text>Second</Text> </Box>
+        <Box
+          mx={["2", "2", "3", "5"]}
+          fontSize={["xl", "xl", "2xl", "2xl"]}
+          className="styleFont"
+        >
+          <Text
+            textAlign="center"
+            className="active"
+            fontSize={["lg", "lg", "3xl", "3xl"]}
+          >
+            {timing.remDays}
+          </Text>
+          <Text>Days</Text>{" "}
+        </Box>
+        <Box
+          mx={["2", "2", "3", "5"]}
+          fontSize={["xl", "xl", "2xl", "2xl"]}
+          className="styleFont"
+        >
+          <Text
+            textAlign="center"
+            className="active"
+            fontSize={["lg", "lg", "3xl", "3xl"]}
+          >
+            {timing.remHour}
+          </Text>
+          <Text>Hour</Text>{" "}
+        </Box>
+        <Box
+          mx={["2", "2", "3", "5"]}
+          fontSize={["xl", "xl", "2xl", "2xl"]}
+          className="styleFont"
+        >
+          <Text
+            textAlign="center"
+            className="active"
+            fontSize={["lg", "lg", "3xl", "3xl"]}
+          >
+            {timing.remMin}
+          </Text>
+          <Text>Minute</Text>{" "}
+        </Box>
+        <Box
+          mx={["2", "2", "3", "5"]}
+          fontSize={["xl", "xl", "2xl", "2xl"]}
+          className="styleFont"
+        >
+          <Text
+            textAlign="center"
+            className="active"
+            fontSize={["lg", "lg", "3xl", "3xl"]}
+          >
+            {timing.remSec}
+          </Text>
+          <Text>Second</Text>{" "}
+        </Box>
       </Flex>
     </Box>
   );

@@ -20,7 +20,7 @@ const Relay = () => {
   };
 
   return (
-    <Box p={["2", "2", "5", "10"]} mt={["0", "5", "15", "20"]}>
+    <Box p={["2", "2", "5", "10"]} mt={["0", "5", "", ""]}>
       <Container
         position="relative"
         maxW="1200"

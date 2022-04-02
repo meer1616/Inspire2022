@@ -7,19 +7,16 @@ const PageContent = () => {
         <Box className="bckImg" height="100vh">
             <Flex
                 flexDir="column"
+                justifyContent="space-evenly"
                 alignItems="center"
-                justifyContent="center"
                 height="100vh"
                 color="white"
             >
-                <Box mb={["48", "52", "56", "64"]} textAlign="center">
-
+                <Box textAlign="center">
                     <Text fontSize={["2xl", "3xl", "4xl", "4xl"]}>Inspire 2022</Text>
-                    <Text fontSize={["xl", "3xl", "4xl", "4xl"]} my="2" px="5">C.K. Pithawala College of Engineering and Technology</Text>
+                    <Text fontSize={["xl", "3xl", "4xl", "4xl"]} my="2" px="5">C. K. Pithawala College of Engineering and Technology</Text>
                     <Text fontSize={["xl", "3xl", "4xl", "4xl"]} my="2">11-12 April, 2022</Text>
-
                 </Box >
-
                 <CountDownTimer />
             </Flex>
         </Box>

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Headland+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anybody&display=swap');
 
 html::-webkit-scrollbar {
   display: none;
@@ -27,7 +28,7 @@ body {
 }
 
 .bckImg{
-  background: rgba(0, 0, 0, 0.6) url("../public/homePage.gif");
+  background: rgba(0, 0, 0, 0.8) url("/homePage.gif");
   background-blend-mode: darken;
   background-repeat: no-repeat;
   background-size: cover;
@@ -44,18 +45,97 @@ body {
 }
 
 .active{
-  color: #0487d3;
+  color: rgb(20, 119, 177);
 }
-.center{
-  display: flex;
+.center{  
   align-items: center;
   justify-content: space-between;
-  /* padding: 0 20px;
-  z-index: 10000;
-  color: white;
-  background-color: black;
-  top: 0;
-  padding: 8px 0;
+}
+
+
+.container{
+  max-width: 1024px;
+  margin: auto;
+  padding: 2em;
+}
+
+.nav{
+  font-family:'Acme', sans-serif;
+}
+.content{
+  text-align: justify;
+  font-family: 'Anybody', cursive;
+}
+.footer{
+  font-family:'Rokkitt', serif;
+}
+.content > p {
+  font-weight: 400;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+} 
+
+
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.2rem 0;
+  gap: 0.3rem;
+}
+
+.icons {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.icons .icon {
+  list-style: none;
+}
+
+.icons .icon a {
+  display: block;
+  position: relative;
+  width: 35px;
+  height: 35px;
+  padding: 2px 1px 1px 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #fff;
+}
+
+.icons .icon a .id {
+  color: #040303;
+  transition: 0.5s;
+}
+
+.icons .icon a:hover .id {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.icons .icon a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
   width: 100%;
-  position: fixed; */
+  height: 100%;
+  background: #55acee;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.icons .icon a:hover:before {
+  top: 0;
+}
+
+.icons .icon:nth-child(2) a:before {
+  background: rgba(196, 6, 79, 0.811);
+}
+.icons .icon:nth-child(4) a:before {
+  background: rgb(19, 78, 241);
 }

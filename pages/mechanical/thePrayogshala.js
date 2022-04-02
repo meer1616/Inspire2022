@@ -21,7 +21,7 @@ const Web = () => {
   };
 
   return (
-    <Box p={["2", "2", "5", "10"]} mt={["0", "5", "15", "20"]}>
+    <Box p={["2", "2", "5", "10"]} mt={["0", "5", "", ""]}>
       <Container
         maxW="1200"
         boxShadow="dark-lg"
@@ -71,32 +71,56 @@ const Web = () => {
               <Heading>Event Category</Heading>
 
               <Text m="3">{details.Category}</Text>
-
-              <Box>
-                <Heading mb="20px"> Rules</Heading>
-                <OrderedList>
-                  <ListItem>
-                    No certificates will be given to the participants if they do
-                    not appear in Round.
-                  </ListItem>
-                  <ListItem>
-                    Any team which is not ready at the time specified will be
-                    disqualified.
-                  </ListItem>
-                  <ListItem>
-                    The decision of the jury or coordinator will be final and
-                    binding in any circumstance. Arguments on their decision
-                    won’t be entertained and may lead to disqualification.
-                  </ListItem>
-                  <ListItem>
-                    The number of rounds and their contents may change
-                    before/during the event and the change will be informed to
-                    all registered participants.
-                  </ListItem>
-                </OrderedList>
+              <Box
+              // m={["", "", "", "30"]}
+              >
+                <Box>
+                  <Heading mb="20px"> Description</Heading>
+                  <OrderedList>
+                    <ListItem>
+                      The participants are responsible for their own health and
+                      safety.
+                    </ListItem>
+                    <ListItem>User interface and User Experience.</ListItem>
+                    <ListItem>
+                      The given exercise should be completed in time to qualify
+                      for next round.
+                    </ListItem>
+                    <ListItem>
+                      Decision of judge and coordinator will be final and no
+                      arguments will be tolerated.
+                    </ListItem>
+                  </OrderedList>
+                </Box>
               </Box>
             </Box>
           </Flex>
+          <Box
+            // border="1px"
+            width="100%"
+          >
+            <Heading my="20px"> Rules</Heading>
+            <OrderedList>
+              <ListItem>
+                No certificates will be given to the participants if they do not
+                appear in Round.
+              </ListItem>
+              <ListItem>
+                Any team which is not ready at the time specified will be
+                disqualified.
+              </ListItem>
+              <ListItem>
+                The decision of the jury or coordinator will be final and
+                binding in any circumstance. Arguments on their decision won’t
+                be entertained and may lead to disqualification.
+              </ListItem>
+              <ListItem>
+                The number of rounds and their contents may change before/during
+                the event and the change will be informed to all registered
+                participants.
+              </ListItem>
+            </OrderedList>
+          </Box>
         </Box>
       </Container>
     </Box>
