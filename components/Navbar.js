@@ -23,22 +23,22 @@ const Navbar = () => {
   const [isLargerThan1280] = useMediaQuery("(min-width: 850px)");
   const router = useRouter();
   return (
-    <Box>
+    <>
       {isLargerThan1280 ? (
-        <Box
+        <Flex
           className="center"
           zIndex="10"
           px="10"
-          // alignItems="center"
-          // justifyContent="space-between"
+          alignItems="center"
+          justifyContent="space-between"
           background="black"
           color="white"
           position="fixed"
           top="0"
           width="100%"
-          //   left="0"
+            left="0"
           py="2"
-          // style={{ backgroundColor: "black" }}
+          style={{ backgroundColor: "black" }}
         >
           <Box>
             <Image src="/Finallogo.png" alt="Inspire 2022" width="44"></Image>
@@ -113,7 +113,7 @@ const Navbar = () => {
                 <Link px="5">Faculty Committee</Link>
                 <Link px="5">Enroll now</Link> */}
           </Box>
-        </Box>
+        </Flex>
       ) : (
         <Box backgroundColor="black" color="white">
           <Flex
@@ -199,7 +199,7 @@ const Navbar = () => {
           </Flex>
         </Box>
       )}
-    </Box>
+    </>
   );
 };
 
